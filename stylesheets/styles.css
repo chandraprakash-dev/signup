@@ -1,0 +1,47 @@
+body {
+    box-sizing: border-box;
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: cornflowerblue;
+    margin: 0 15%;
+    height: 100%;
+    display: flex;
+}
+
+.section {
+    position: relative;
+}
+
+.background-section {
+    background: url("../assets/images/plant.jpg");
+    flex : 2;
+}
+
+.caption {
+    background: rgba(17, 17, 17, 0.8);
+    color: white;
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+    letter-spacing: 5px;
+    position: relative;
+    top: 30%;
+}
+
+.footnote {
+    color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 2px;
+    font-family: Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+}
+
+.form-section {
+    flex: 3;
+}
