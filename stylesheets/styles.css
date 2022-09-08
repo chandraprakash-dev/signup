@@ -1,13 +1,32 @@
-body {
+* {
     box-sizing: border-box;
+}
+
+body {
     background-color: black;
+    font-family: Helvetica, sans-serif;
     height: 100vh;
+}
+
+p {
     margin: 0;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    line-height: 2rem;
+    width: 250px;
 }
 
 .container {
     background-color: cornflowerblue;
-    margin: 0 15%;
+    width: max(75%, 1200px);
+    margin: 0 auto;
     height: 100%;
     display: flex;
 }
@@ -18,18 +37,24 @@ body {
 
 .background-section {
     background: url("../assets/images/plant.jpg");
-    flex : 2;
+    width : 35%;
 }
 
 .caption {
-    background: rgba(17, 17, 17, 0.8);
     color: white;
     font-size: 2rem;
-    padding: 2rem 0;
     text-align: center;
     letter-spacing: 5px;
+    height: 35vh;
     position: relative;
-    top: 30%;
+}
+
+.caption p{
+    background: rgba(17, 17, 17, 0.6);
+    padding: 3rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footnote {
@@ -37,11 +62,72 @@ body {
     width: 100%;
     position: absolute;
     bottom: 2px;
-    font-family: Helvetica, sans-serif;
     font-size: small;
     text-align: center;
 }
 
 .form-section {
-    flex: 3;
+    width: 65%;
+    background: #f5f5f5;
+}
+
+.form-info {
+    height: 35vh;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20% 3rem 2rem;
+}
+
+.form-info p {
+    margin-top: 1rem;
+}
+
+.fieldset {
+    border: 0;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.main-section {
+    height: 30vh;
+    background: white;
+}
+
+.main-section p {
+    font-size: 1.5rem;
+}
+
+.inputs-container {
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-right: 20%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.input-field {
+    position: relative;
+    flex: 1;
+}
+
+button {
+    margin: 2rem 0;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 10px;
+    background: darkolivegreen;
+    color: white;
+}
+
+.second-section p{
+    margin-top: 1rem;
+}
+
+.second-section span {
+    color: darkolivegreen;
 }
