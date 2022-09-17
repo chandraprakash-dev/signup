@@ -12,17 +12,6 @@ p {
     margin: 0;
 }
 
-input, label {
-    display: block;
-}
-
-input {
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    line-height: 2rem;
-    width: 250px;
-}
-
 .container {
     width: max(75%, 1200px);
     margin: 0 auto;
@@ -88,11 +77,8 @@ input {
     margin-top: 1.5rem;
 }
 
-form {
-    padding-top: 1rem;
-}
-
 .main-section {
+    padding-top: 1rem;
     padding-left: 3rem;
     background: white;
     height: 30vh;
@@ -109,12 +95,32 @@ form {
     margin-right: 20%;
     display: flex;
     gap: 2rem;
-    justify-content: space-between;
 }
 
 .input-field {
     position: relative;
     flex: 1;
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    color: hsl(217deg 9% 38%);
+    font-size: 0.9rem;
+}
+
+input {
+    border: 1px solid hsl(220deg 13% 91%);
+    padding-left: 10px;
+    border-radius: 5px;
+    line-height: 2rem;
+    width: 250px;
+}
+
+input:focus {
+    border-color: hsl(222deg 65% 55%);
 }
 
 button {
