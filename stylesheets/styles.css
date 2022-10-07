@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: norse-bold;
+    src: url("../assets/fonts/Norse-Bold.otf");
+}
+
 body {
     background-color: black;
     font-family: Arial, sans-serif;
@@ -28,21 +33,30 @@ p {
     flex:3;
 }
 
-.caption {
+.caption-area {
     color: white;
-    font-size: 2rem;
+    font-size: 4rem;
+    font-family: norse-bold, sans-serif;
     text-align: center;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     height: 35vh;
     position: relative;
 }
 
-.caption p{
+.caption {
     background: rgba(17, 17, 17, 0.6);
-    padding: 3rem 0;
+    display: flex;
+    width: 100%;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.odin-logo {
+    width: 100px;
+    height: auto;
 }
 
 .footnote {
