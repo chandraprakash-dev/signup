@@ -17,6 +17,10 @@ p {
     margin: 0;
 }
 
+.error {
+    border: 1px solid #c43f43;
+}
+
 .container {
     width: max(75%, 1200px);
     margin: 0 auto;
@@ -135,6 +139,7 @@ input {
 
 input:focus {
     border-color: hsl(222deg 65% 55%);
+    box-shadow: 2px 5px 5px 2px #eeeeee;
 }
 
 button {
