@@ -21,6 +21,12 @@ p {
     border: 1px solid #c43f43;
 }
 
+.error-wrapper {
+    color: #c43f43;
+    font-size: small;
+    margin: 1px 0 0 3px;
+}
+
 .container {
     width: max(75%, 1200px);
     margin: 0 auto;
